@@ -1,0 +1,38 @@
+.ctm-radio-area {
+    position: relative;
+    cursor: pointer;
+    float: left;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-clip: padding-box;
+    background-color: #000;
+    box-shadow: 0 2px 0 black, inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    background-image: linear-gctm-radioient(bottom, rgba(14, 14, 14, 0.8) 0%, rgba(39, 39, 39, 0.8) 69.68%, rgba(43, 43, 43, 0.8) 70.43%, rgba(68, 68, 68, 0.8) 100%);
+    margin-top: 5px;
+    margin-right: 8px;
+    content: " ";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+.ctm-radio-native:checked + .ctm-radio-area {
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-clip: padding-box;
+    background-color: #000;
+    box-shadow: 0 1px 0 #303030, inset 0 1px 1px rgba(0, 0, 0, 0.7), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    background-image: linear-gctm-radioient(bottom, rgba(24, 24, 24, 0.8) 0%, rgba(26, 26, 26, 0.8) 94.73%, rgba(0, 0, 0, 0.8) 100%);
+}
+.ctm-radio-native:checked + .ctm-radio-area span {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-clip: padding-box;
+    background-color: #31ebfb;
+    box-shadow: 0 -1px 0 black, 0 0 5px #32ebfe;
+    display: inline-block;
+    content: " ";
+    position: absolute;
+    left: 6px;
+    top: 4px;
+}

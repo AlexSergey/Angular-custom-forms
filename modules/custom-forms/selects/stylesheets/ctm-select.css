@@ -1,0 +1,115 @@
+.custom-select {
+    width: 100px;
+    height: 25px;
+    border: 1px solid black;
+}
+.custom-select a {
+    float: right;
+    height: 100%;
+    width: 25px;
+    background: red;
+}
+.custom-select-drop {
+    position: absolute;
+}
+
+.select-area {
+    position: relative;
+    color: #fff;
+    font-family: "Arial";
+    font-size: 17px;
+    line-height: 36px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 #000000;
+    padding: 0 26px 0 5px;
+    height: 36px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background-clip: padding-box;
+    background-color: #000;
+    box-shadow: 0 1px 0 #303030, inset 0 1px 1px rgba(0, 0, 0, 0.7);
+    background-image: linear-gradient(bottom, rgba(24, 24, 24, 0.8) 0%, rgba(26, 26, 26, 0.8) 94.73%, rgba(0, 0, 0, 0.8) 100%);
+    float: left;
+    width: 100% !important;
+    box-sizing: border-box;
+    margin: 0 0 10px;
+}
+.select-area .select-opener {
+    text-align: center;
+    background: rgb(80,80,80);
+    background: linear-gradient(to bottom, rgba(80,80,80,1) 0%,rgba(84,84,84,1) 5%,rgba(82,82,82,1) 16%,rgba(61,61,61,1) 95%,rgba(58,58,58,1) 100%);
+    box-shadow: 0 0 1px 2px #232323;
+    width: 28px;
+    height: 28px;
+    display: block;
+    cursor: pointer;
+    top: 3px;
+    right: 4px;
+    position: absolute;
+}
+.select-area .select-opener:after {
+    position: absolute;
+    content: "";
+    border-top: 3px solid #21d2f1;
+    border-left: 3px solid #21d2f1;
+    height: 6px;
+    width: 6px;
+}
+.select-area .select-opener:after {
+    margin-left: -5px;
+    margin-top: 7px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+.ctm-drop {
+    box-sizing: border-box;
+    position: absolute;
+    overflow: hidden;
+    background: #353535;
+    background: linear-gradient(45deg, #151515, #383838);
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    z-index: 2000;
+    height: 150px;
+    font-size: 15px;
+    line-height: 23px;
+}
+.ctm-drop .drop-holder {
+    overflow: hidden;
+}
+.ctm-drop ul:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.ctm-drop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ctm-drop ul li {
+    width: 100%;
+    float: left;
+}
+.ctm-drop ul a {
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    cursor: default;
+    color: #fff;
+    height: 1%;
+}
+.ctm-drop .item-selected a {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    color: #0e0e0e;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2af1fc), color-stop(100%, #17b2e6));
+    background-image: -webkit-linear-gradient(#2af1fc, #17b2e6);
+    background-image: -moz-linear-gradient(#2af1fc, #17b2e6);
+    background-image: -o-linear-gradient(#2af1fc, #17b2e6);
+    background-image: linear-gradient(#2af1fc, #17b2e6);
+    -webkit-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}

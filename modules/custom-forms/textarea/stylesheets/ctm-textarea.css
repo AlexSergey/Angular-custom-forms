@@ -1,0 +1,13 @@
+.ctm-textarea {
+    outline: none;
+    height: 100%;
+}
+.ctm-textarea.active {
+    height: auto;
+}
+.ctm-textarea {
+    cursor: text;
+    white-space: pre-line;
+    height: 220px;
+    width: 480px;
+}

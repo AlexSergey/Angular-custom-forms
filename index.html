@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <title></title>
+
+    <link media="all" rel="stylesheet" type="text/css" href="css/all.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="modules/custom-forms/customscroll/css/perfect-scrollbar.css" />
+
+    <script src="js/libs/jquery-1.11.0.js"></script>
+
+    <script src="js/libs/angular.min.js"></script>
+
+
+    <script src="modules/custom-forms/customscroll/lib/jquery.mousewheel.js"></script>
+    <script src="modules/custom-forms/customscroll/directive/perfect-scrollbar.js"></script>
+    <script src="modules/custom-forms/customscroll/directive/angular-perfect-scrollbar.js"></script>
+
+    <script src="js/application.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="modules/custom-forms/checkboxes/directive/ctm-checkbox.js"></script>
+    <script src="modules/custom-forms/textarea/directive/ctm-textarea.js"></script>
+    <script src="modules/custom-forms/radiobuttons/directive/ctm-radio.js"></script>
+    <script src="modules/custom-forms/selects/directive/ctm-select.js"></script>
+</head>
+<body ng-app="app" class="background_13">
+    <div ng-controller="Cntrl01" id="cntrl">
+
+
+        <header id="header" class="block">
+            <div class="stripped_item stripped_item_yellow"></div>
+                <div class="holder">
+                    <div class="modern-label">
+                        <p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p><p class="modern-label-layer">Angular Custom Forms</p>
+                    </div>
+                </div>
+            <div class="stripped_item stripped_item_yellow"></div>
+        </header>
+        <div id="custom-forms" class="block">
+           <form class="ctm-form holder" action="">
+               <div class="row">
+                   <h1 class="fonts_2 title">
+                       <div class="holder">
+                           CHECKBOX
+                       </div>
+                   </h1>
+                   <div class="col1">
+                       <div custom-checkbox ckeckbox-id="01" checkbox-value="Red Color" ng-model="formData.checkboxes.red"></div>
+                       <div custom-checkbox ckeckbox-id="02" checkbox-value="Green Color" ng-model="formData.checkboxes.green"></div>
+                       <div custom-checkbox ckeckbox-id="03" checkbox-value="Blue Color" ng-model="formData.checkboxes.blue"></div>
+                   </div>
+                   <div class="col1">
+                       <div class="code text">
+                           <ul>
+                               <li>Add custom attribute to element <span class="select-elem">"custom-checkbox"</span> for initialization directive</li>
+                               <li>Create label from <span class="select-elem">"checkbox-value"</span> attribute</li>
+                               <li>Bind model in <span class="select-elem">"ng-model"</span> attribute</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <div class="row">
+                   <h1 class="fonts_2 title">
+                       <div class="holder">
+                           SELECT
+                       </div>
+                   </h1>
+                   <div class="row">
+                       <div class="col1">
+                           <div class="text">
+                               <h3>Select 1</h3>
+                           </div>
+                           <div ng-model="formData.select"  ng-select-items="selectItems"  ng-select-default="'$1'"      custom-select></div>
+                           <div ng-model="formData.select3" ng-select-items="selectItems3" ng-select-default="'Default'" custom-select></div>
+                       </div>
+                       <div class="col1">
+                           <div class="text group">
+                               <h3 class="fonts_1">Add options to select 1</h3>
+                               <div style="margin: 0 0 5px;" class="group">
+                                   <div style="width: 20%; float: left; margin: 0 2.5%">
+                                       <input type="text" class="test_add_select ctm-input" placeholder="adding id is select" />
+                                   </div>
+                                   <div style="width: 70%; float: left; margin: 0 2.5%">
+                                       <input type="text" class="test_add_select2 ctm-input" placeholder="adding text is select" />
+                                   </div>
+                               </div>
+                               <div style="width: 100%; text-align: center">
+                                   <a href="#" class="ctm-btn add_select" style="display: inline-block">Add to Select</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="code text">
+                           <ul>
+                               <li>Add custom attribute to element <span class="select-elem">"custom-select"</span> for initialization directive</li>
+                               <li>Set <span class="select-elem">"ng-select-items"</span> data options</li>
+                               <li>Set <span class="select-elem">"ng-select-default"</span> default set item</li>
+                               <li>Bind model in <span class="select-elem">"ng-model"</span> attribute</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+                <div class="row">
+                    <h1 class="fonts_2 title">
+                        <div class="holder">
+                            CUSTOM SCROLL
+                        </div>
+                    </h1>
+                    <div class="col1">
+                        <div class="custom-scroll-block scroller text" perfect-scrollbar wheel-propagation="true" wheel-speed="50">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi consequatur cumque doloremque enim expedita laborum minima provident quam recusandae! Dolore dolorum et impedit iure magni maiores optio sint? Sunt.</p>
+                        </div>
+                    </div>
+                </div>
+               <div class="row">
+                   <h1 class="fonts_2 title">
+                       <div class="holder">
+                           CUSTOM RADIO
+                       </div>
+                   </h1>
+                   <div class="col1">
+                        <div custom-radio radio-id="01" radio-link="rad01" model-value="1"  radio-value="Some text"   ng-model="formData.radiobutton"></div>
+                        <div custom-radio radio-id="02" radio-link="rad01" model-value="2" radio-value="Some text 2" ng-model="formData.radiobutton"></div>
+                   </div>
+               </div>
+               <div class="row">
+                   <h1 class="fonts_2 title">
+                       <div class="holder">
+                           CUSTOM TEXTAREA
+                       </div>
+                   </h1>
+                   <div class="row">
+                       <div class="col1">
+                           <div ctm-textarea-height="200" ctm-textarea-propagation="true" ctm-textarea-wheel-speed="50" ng-model="textarea" custom-textarea></div>
+                       </div>
+                       <div class="col1">
+                           <h1 class="fonts_4">MODEL BIND:</h1>
+                           <p style="word-break: break-all">{{textarea}}</p>
+                       </div>
+                   </div>
+               </div>
+
+            </form>
+        </div>
+        <div class="stripped_item stripped_item_yellow"></div>
+        <div class="row text">
+            <h4 style="text-align: center; color: #fff; padding: 5px 0 0">@ Sergey Alexandrov. 2014.</h4>
+        </div>
+        <div class="sets_model">
+            <div class="block_chrome">
+                <div class="block_chrome_holder">
+                    <div class="block_chrome_frame">
+                        <h1 class="fonts_2">MODEL</h1>
+                        <h1 class="fonts_4">{{formData}}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

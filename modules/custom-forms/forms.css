@@ -1,0 +1,24 @@
+@import "./checkboxes/stylesheets/ctm-checkboxes.css";
+@import "./customscroll/stylesheets/ctm-scroll.css";
+@import "./radiobuttons/stylesheets/ctm-radio.css";
+@import "./labels/stylesheets/ctm-labels.css";
+@import "./selects/stylesheets/ctm-select.css";
+@import "./inputs/stylesheets/ctm-inputs.css";
+@import "./textarea/stylesheets/ctm-textarea.css";
+@import "./buttons/stylesheets/ctm-buttons.css";
+
+.custom-form-hidden {
+    position: absolute;
+    left: -9999px;
+}
+.custom-form-hidden-display {
+    display: none;
+}
+
+
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+
+
