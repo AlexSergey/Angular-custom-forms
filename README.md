@@ -1,4 +1,4 @@
-EasyParallaxPlugin
+Angular Custom Forms
 ==================
 This is custom forms for Angular.
 
